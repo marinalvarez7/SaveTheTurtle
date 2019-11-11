@@ -4,13 +4,13 @@ body {
   text-align: center;
 }
 
-
 section { display: none;}
 section.active {display: block;}
 
-#gameOn {
+.backgroundImage {
+  height:46vh;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 #intro {
@@ -19,7 +19,55 @@ section.active {display: block;}
   background-size: cover;
   max-height: 100vh;
 }
-.backgroundImage {
-  height:100vh;
+
+#startButton {
+  margin-top:15%; 
+  background-color: rgb(23, 136, 224);
+  -webkit-box-shadow: 9px 10px 131px 57px rgba(14,102,235,1);
+  -moz-box-shadow: 9px 10px 131px 57px rgba(14,102,235,1);
+  box-shadow: 9px 10px 131px 57px rgba(14,102,235,1);
+  font-size: medium;
+  font-family: fantasy;
 }
 
+#gameOn {
+  padding: 0;
+  margin:0;
+}
+
+#youWin {
+  background-image: url("../images/introBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#gameOver {
+  background-image: url("../images/introBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+ #regles {
+  margin-top: 5%;
+  font-family: fantasy;
+ }
+
+#ninjaTurtles {
+   margin-top: 10%;
+ }
+
+ #dyingTurtle {
+  margin-top: 15%;
+}
+
+#lost {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  font-family: fantasy;
+  font-size: 20px;
+}

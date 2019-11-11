@@ -9,22 +9,30 @@
 <body>
   <section id="intro" class="active">
     <div>
-      <button id="startButton">START GAME !</button>
-      <p id= "texte introduction">Use the arrows to save the Turtle from pollution !</p>
+      <button id="startButton">🐢 START GAME 🐢</button>
+      <p id= "regles">Use the arrows to save the Turtle from pollution </p>
       <div class="backgroundImage" ></div>
     </div>
   </section> 
   <section id="gameOn1">
-    <canvas width="1300" height="600"></canvas></section>
+    <canvas width="1349" height="625"></canvas></section>
   <!--section id="gameOn2">
     <canvas width="1300" height="550"></canvas>
   </section>
   <section id="gameOn3">
     <canvas width="1500" height="2000"></canvas>
   </section-->
-  <section id="gameOver"><img src="./images/dyingEarth.gif">>
+  <section id="gameOver">
+    <div>
+        <p id="lost">GAME OVER</p>
+        <img id ="dyingTurtle" src="./images/dyingTurtle.gif">
+        <div class="backgroundImage" ></div>
+    </div>
+    <!--<div>
+      <button id="startAgain">START AGAIN ?</button></div-->
   </section>
-  <section id="youWin"><img src="./images/dancingQueen.gif"><img src="./images/yoloTurtle.gif"></section>
+  <section id="youWin"><img id="ninjaTurtles" src="./images/ninjaTurtles.gif" alt = "ninjaTurtles">
+    <div class="backgroundImage" ></div></section>
   <script type="text/javascript" src="./js/turtle.js"></script>
   <script type="text/javascript" src="./js/obstacles.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>

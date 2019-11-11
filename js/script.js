@@ -31,7 +31,7 @@ function draw() {
   turtle.draw();
 
 
-  if (frames % 50 === 0) {
+  if (frames % 25 === 0) {
     var obstacle = new Obstacle();
     obstacles.push(obstacle);
   }
@@ -51,15 +51,12 @@ function draw() {
       var $gameOn1 = document.getElementById("gameOn1");
       $gameOn1.classList.remove("active");
       var $gameOver = document.getElementById("gameOver");
-      $gameOver.classList.add("active");
-
-      //var $gameOver = document.getElementById("gameOver");
-      //$gameOver.classList.remove("active");
-    }
-  }
+      $gameOver.classList.add("active")
+    };
+  };
 
   // si la tortue arrive à la surface //
-  if (turtle.y < 280) {
+  if (turtle.y < 325) {
     gameOver = true;
     document.getElementById("gameOn1").classList.remove("active");
     document.getElementById("youWin").classList.add("active");

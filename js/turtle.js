@@ -47,11 +47,11 @@ class Turtle {
       this.y += 0;
     } else {
       this.y -= this.speedy;}
-      //console.log(turtle.y);
+      console.log(turtle.y);
   }
   moveDown() {
     this.img = this.img2;
-    if (this.y >= 449.5) {
+    if (this.y >= 500) {
       this.y += 0;
     } else {
       this.y += this.speedy;}
